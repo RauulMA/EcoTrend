@@ -8,7 +8,59 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">EcoTrend</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menuPrincipal">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="categorias.html">Produtos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+                </ul>
+                <a class="btn btn-outline-light" href="categorias.html">Carrinho <span class="badge bg-success">0</span></a>
+            </div>
+        </div>
+    </nav>
+    <main class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <h1 class="section-title text-center">Entre em contato</h1>
+                <p class="text-center text-muted mb-4">Preencha o formulário para enviar uma mensagem.</p>
+                <form class="card shadow-sm p-4">
+                    <div class="mb-3"><label for="nome" class="form-label">Nome</label><input type="text" class="form-control" id="nome" required></div>
+                    <div class="mb-3"><label for="email" class="form-label">E-mail</label><input type="email" class="form-control" id="email" required></div>
+                    <div class="mb-3"><label for="assunto" class="form-label">Assunto</label><select id="assunto" class="form-select" required><option value="">Selecione</option><option>Dúvida sobre produto</option><option>Pedido</option><option>Troca ou devolução</option><option>Outro</option></select></div>
+                    <div class="mb-3"><label for="mensagem" class="form-label">Mensagem</label><textarea id="mensagem" class="form-control" rows="5" required></textarea></div>
+                    <button class="btn btn-success" type="submit">Enviar mensagem</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-dark text-white mt-5 py-4">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <h5>EcoTrend</h5>
+                    <p class="mb-0">Produtos para um estilo de vida mais consciente.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Links</h5>
+                    <a href="index.html">Início</a><br>
+                    <a href="categorias.html">Produtos</a><br>
+                    <a href="contato.html">Contato</a>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contato</h5>
+                    <p class="mb-1">contato@ecotrend.com</p>
+                    <p class="mb-0">(11) 99999-9999</p>
+                </div>
+            </div>
+            <hr>
+            <p class="text-center mb-0">&copy; 2026 EcoTrend. Projeto acadêmico.</p>
+        </div>
+    </footer><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-
